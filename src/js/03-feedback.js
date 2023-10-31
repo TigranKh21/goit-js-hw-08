@@ -25,7 +25,7 @@ function onInput(event) {
 
 function onSubmit(event){
     event.preventDefault();
-    console.log(localStorage.getItem('feedback-form-state'))
+    console.log(JSON.parse(localStorage.getItem('feedback-form-state')))
     localStorage.removeItem('feedback-form-state')
     event.currentTarget.reset()
 }
